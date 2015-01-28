@@ -1,19 +1,18 @@
 def bubble_sort(array)
 
-a = array
-
-swapped = true
-while swapped do
-    swapped = false
-    0.upto(a.size-2) do |i|
+	a = array
+	swapped = true
+	while swapped do
+    	swapped = false
+    	0.upto(a.size-2) do |i|
         if a[i] > a[i+1]
             a[i], a[i+1] = a[i+1], a[i]
             swapped = true
         end
     end
-end
+    end
 
-return a
+    return a
 
 end
 
